@@ -1,0 +1,18 @@
+
+server:
+  port: 8070
+spring:
+  application:
+    name: customer-service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/customer
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      #used to update the existinf table , rather than creating a new one
+      ddl-auto: update
+    database: postgresql
+    #Used for generate postgres specific synatx , as different sql's have different syntax
+    database-platform: org.hibernate.dialect.PostgreSQLDialect

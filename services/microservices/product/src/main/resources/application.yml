@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: product-service
+  data:
+    mongodb:
+      uri: mongodb://root:root@localhost:27017/product?authSource=admin
+      username: root
+      password: root
+      host: localhost
+      port: 27017
+      database: product
+      authentication-database: admin
+      repositories:
+        enabled: true
+

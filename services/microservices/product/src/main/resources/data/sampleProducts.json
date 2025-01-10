@@ -1,0 +1,37 @@
+
+  {
+    "id": 1,
+    "name": "Apple iPhone 14",
+    "description": "Latest model of Apple's smartphone with advanced features.",
+    "available_quantity": 50,
+    "category": "Electronics"
+  },
+  {
+    "id": 2,
+    "name": "Nike Air Max 270",
+    "description": "Popular running shoes with excellent comfort and style.",
+    "available_quantity": 100,
+    "category": "Footwear"
+  },
+  {
+    "id": 3,
+    "name": "Sony WH-1000XM4",
+    "description": "Premium noise-cancelling wireless headphones.",
+    "available_quantity": 30,
+    "category": "Electronics"
+  },
+  {
+    "id": 4,
+    "name": "Levi's 501 Original Fit Jeans",
+    "description": "Classic straight-leg jeans with a timeless design.",
+    "available_quantity": 200,
+    "category": "Apparel"
+  },
+  {
+    "id": 5,
+    "name": "Instant Pot Duo 7-in-1",
+    "description": "Versatile electric pressure cooker with multiple functions.",
+    "available_quantity": 75,
+    "category": "Home Appliances"
+  }
+
