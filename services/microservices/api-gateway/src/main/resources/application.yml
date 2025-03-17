@@ -1,0 +1,64 @@
+spring:
+  application:
+    name: api-gateway
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: user
+#          uri: http://localhost:8001
+#          predicates:
+#            - Path= /user/**
+#          filters:
+#            - StripPrefix= 1
+#        - id: product
+#          uri: http://localhost:8002
+#          predicates:
+#            - Path= /product/**
+#          filters:
+#            - StripPrefix= 1
+#        - id: cart
+#          uri: http://localhost:8003
+#          predicates:
+#            - Path= /cart/**
+#          filters:
+#            - StripPrefix= 1
+#        - id: payment
+#          uri: http://localhost:8004
+#          predicates:
+#            - Path= /payment/**
+#          filters:
+#            - StripPrefix= 1
+#        - id: order
+#          uri: http://localhost:8005
+#          predicates:
+#            - Path= /order/**
+#          filters:
+#            - StripPrefix= 1
+#        - id: product-suggestion
+#          uri: http://localhost:8006
+#          predicates:
+#            - Path= /product-suggestion/**
+#          filters:
+#            - StripPrefix= 1
+#  security:
+#    user:
+#      name: admin
+#      password: admin
+  ##Redis configuartion
+#  session:
+#    redis:
+#      store-type: redis
+#      namespace: session
+#      flush-mose: on-save
+#  redis:
+#    host: localhost
+#    port: 6379
+eureka:
+  client:
+    service:
+      defaultZone: http://localhost:8761/eureka/
+    instance:
+      preferIpAddress:true
+
+server:
+  port: 8099

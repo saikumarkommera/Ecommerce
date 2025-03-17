@@ -1,0 +1,11 @@
+//PORTS :
+customer : 8070
+product : 8080
+apigateway : 8090
+//For Redis
+sudo systemctl start redis-server
+redis-cli
+PING
+//Postgress creds
+
+//MongoDB creds
