@@ -1,11 +1,19 @@
-//PORTS :
-customer : 8070
-product : 8080
-apigateway : 8090
-//For Redis
-sudo systemctl start redis-server
-redis-cli
-PING
-//Postgress creds
+PORTS :
+  customer : 8070
+  product : 8080
+  apigateway : 8099
+  eureka : 8761
+For Redis startup in local :
+  sudo systemctl start redis-server
+  redis-cli
+  PING
+Postgress creds:
 
-//MongoDB creds
+MongoDB creds:
+
+Issues :
+1. Issue with apigateway registration with eureka:
+   Not getting registred with eureka after launch.Finnaly moved the cloud and spring versions a bit lower and it worked.
+2. Issue with gateway routing :
+   Getting 404 when hit the api's , not able to route the requests to intended services.
+   Solved by changing the gateway dependency from "spring-cloud-starter-gateway-mvc" to "spring-cloud-starter-gateway"
