@@ -5,11 +5,11 @@ spring:
     gateway:
       routes:
         - id: customer-service
-          uri: http://localhost:8070  # URL of customer-service
+          uri: lb://CUSTOMER-SERVICE
           predicates:
             - Path=/customer/**
         - id: product-service
-          uri: http://localhost:8080  # URL of product-service
+          uri: lb://PRODUCT-SERVICE
           predicates:
             - Path=/products/**
 server:

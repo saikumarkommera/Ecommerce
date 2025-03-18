@@ -11,6 +11,17 @@ Postgress creds:
 
 MongoDB creds:
 
+API GATEWAY :
+   An API Gateway is a powerful component that can handle many responsibilities:
+   Load Balancing: Distributes incoming requests across multiple instances of a service (e.g., using Ribbon or Spring Cloud LoadBalancer).
+   Authentication and Authorization: Validates tokens (e.g., JWT) or checks user permissions before forwarding requests to downstream services.
+   Rate Limiting: Limits the number of requests a client can make in a given time frame.
+   Routing: Routes requests to the appropriate microservice based on the request path or other criteria.
+   Caching: Caches responses to reduce load on downstream services.
+   Logging and Monitoring: Logs requests and responses for debugging and monitoring purposes.
+   Circuit Breaker: Implements fault tolerance by stopping requests to a failing service (e.g., using Hystrix or Resilience4j).
+   Request/Response Transformation: Modifies requests or responses (e.g., adding headers, transforming JSON).
+
 Issues :
 1. Issue with apigateway registration with eureka:
    Not getting registred with eureka after launch.Finnaly moved the cloud and spring versions a bit lower and it worked.

@@ -18,4 +18,7 @@ spring:
       authentication-database: admin
       repositories:
         enabled: true
+eureka:
+  instance:
+    prefer-ip-address: true  # Register with IP address instead of hostname
 
