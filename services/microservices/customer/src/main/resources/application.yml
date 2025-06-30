@@ -16,3 +16,6 @@ spring:
     database: postgresql
     #Used for generate postgres specific synatx , as different sql's have different syntax
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+eureka:
+  instance:
+    prefer-ip-address: true  # Register with IP address instead of hostname
