@@ -28,7 +28,7 @@ public class ProductService {
             return (List<ProductDTO>)obj;
         }
         List<ProductDTO> products =  this.repository.findAll().stream()
-                .map(mapper::toPrductDTO)
+                .map(mapper::toProductDTO)
                 .collect(Collectors.toList());
         this.redis.set("products",products,300l);
         return products;
@@ -40,7 +40,7 @@ public class ProductService {
             log.info("Getting product from cache");
             return (ProductDTO)obj;
         }
-        ProductDTO product = this.repository.findById(prodId).map(mapper::toPrductDTO).orElseThrow(() -> new ProductNotFoundException("Product not found"));
+        ProductDTO product = this.repository.findById(prodId).map(mapper::toProductDTO).orElseThrow(() -> new ProductNotFoundException("Product not found"));
         this.redis.set(prodId,product,300l);
         return product;
     }

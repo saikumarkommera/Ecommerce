@@ -7,10 +7,14 @@ spring:
         - id: customer-service
           uri: lb://CUSTOMER-SERVICE
           predicates:
-            - Path=/customer/**
+            - Path=/api/customer/**
         - id: product-service
           uri: lb://PRODUCT-SERVICE
           predicates:
-            - Path=/products/**
+            - Path=/api/products/**
+        - id: order-service
+          uri: lb://ORDER-SERVICE
+          predicates:
+            - Path=/api/orders/**
 server:
   port: 8099

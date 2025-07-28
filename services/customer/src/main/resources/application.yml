@@ -1,13 +1,13 @@
 
 server:
-  port: 8070
+  port: 8077
 spring:
   application:
     name: customer-service
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/customer
-    username: root
+    username: postgres
     password: root
   jpa:
     hibernate:
