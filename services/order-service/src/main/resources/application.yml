@@ -1,0 +1,20 @@
+
+server:
+  port: 8067
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/order
+    username: postgres
+    password: root
+  jpa:
+    hibernate:
+      #used to update the existing table , rather than creating table again
+      ddl-auto: update
+    database: postgresql
+    #Used for generate postgres specific synatx , as different sql's have different syntax
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+eureka:
+  instance:
+    prefer-ip-address: true  # Register with IP address instead of hostname
