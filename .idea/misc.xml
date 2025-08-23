@@ -13,6 +13,12 @@
         <option value="$USER_HOME$/Downloads/service-registry/pom.xml" />
         <option value="$PROJECT_DIR$/services/microservices/api-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/services/microservices/service-registry/pom.xml" />
+        <option value="$USER_HOME$/Downloads/order-service/order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/services/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/services/customer/pom.xml" />
+        <option value="$PROJECT_DIR$/services/order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/services/product/pom.xml" />
+        <option value="$PROJECT_DIR$/services/service-registry/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

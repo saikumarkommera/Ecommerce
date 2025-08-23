@@ -1,17 +1,16 @@
 
 server:
-  port: 8077
+  port: 8067
 spring:
   application:
-    name: customer-service
+    name: order-service
   datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/customer
+    url: jdbc:postgresql://localhost:5432/order
     username: postgres
     password: root
   jpa:
     hibernate:
-      #used to update the existinf table , rather than creating a new one
+      #used to update the existing table , rather than creating table again
       ddl-auto: update
     database: postgresql
     #Used for generate postgres specific synatx , as different sql's have different syntax
